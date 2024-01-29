@@ -156,10 +156,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   camera: {fileID: 1866290094}
+  backplateMaterial: {fileID: 2100000, guid: 65972ebbfd5c529479f9c30fd3ec3f6a, type: 2}
   performBuild: 0
   performDestroy: 0
-  addButtons: 0
-  removeButtons: 0
 --- !u!4 &177089016
 Transform:
   m_ObjectHideFlags: 0
@@ -207,7 +206,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 177089015}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: setActive
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -222,7 +221,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 177089015}
         m_TargetAssemblyTypeName: Menu, Assembly-CSharp
-        m_MethodName: setActive
+        m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -239,7 +238,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   facingCameraTrackingThreshold: 80
-  requireFlatHand: 0
+  requireFlatHand: 1
   flatHandThreshold: 45
   followHandUntilFacingCamera: 0
   followHandCameraFacingThresholdAngle: 60
@@ -582,7 +581,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2351505566771328527, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
       propertyPath: m_ClearFlags
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2351505567455720332, guid: 4d7e2f87fefe0ba468719b15288b46e7, type: 3}
       propertyPath: m_LocalPosition.x
@@ -654,7 +653,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &1600812347
 BoxCollider:
   m_ObjectHideFlags: 0
